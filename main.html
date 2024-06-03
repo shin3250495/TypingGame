@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing game main</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="main">
+    <!-- BGM -->
+    <audio id="bacBgm" loop>
+        <source src="bgm&sound/8ビットの冒険.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- プレイヤーの攻撃サウンド -->
+    <audio id="playerAtkSound">
+        <source src="bgm&sound/打撃1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- 敵の攻撃サウンド -->
+    <audio id="enemyAtkSound">
+        <source src="bgm&sound/打撃2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section>
+        <p id="restart">Escで戻る</p>
+
+        <!-- 敵エリア -->
+        <div class="container">
+            <!-- <div> -->
+            <img id="enemyImg">
+            <!-- </div> -->
+            <div class="enemyStatus">
+                <p id="enemyName">name</p>
+                <p id="enemyHp"></p>
+                <p id="enemyAtk"></p>
+            </div>
+
+            <!-- ログエリア -->
+            <div class="logArea">
+                <p>ログ</p>
+                <p id="log1"></p>
+                <p id="log2"></p>
+                <p id="log3"></p>
+                <p id="log4"></p>
+                <p id="log5"></p>
+                <p id="log6"></p>
+                <p id="log7"></p>
+                <p id="log8"></p>
+                <p id="log9"></p>
+                <p id="log10"></p>
+            </div>
+        </div>
+        <!-- タイピングエリア -->
+        <div class="typingArea">
+            <p id="targetKa"></p>
+            <p id="targetJa"></p>
+            <p id="target"></p>
+        </div>
+        <!-- ステータスエリア -->
+        <div class="statusArea">
+            <div>
+                <p id="lv"></p>
+                <p id="ex"></p>
+            </div>
+            <div>
+                <p id="hp"></p>
+
+                <p id="atk"></p>
+            </div>
+
+            <div class="time">
+                <p>経過時間</p>
+                <p id="timer" style="text-align: center;">0秒</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
