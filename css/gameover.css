@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    padding-top: 150px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    color: white;   
+}
+
+#go {
+    font-size: 80px;
+}
+
+.choice {
+    font-size: 30px;
+}
