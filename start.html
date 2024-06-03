@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>typing game start</title>
+  <link rel="stylesheet" href="css/start.css">
+</head>
+
+<body>
+  <!-- BGM -->
+  <audio id="bacBgm" loop>
+    <source src="bgm&sound/洞窟の奥で光り輝くもの_M313.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 選択・決定サウンド -->
+  <audio id="decisionSound">
+    <source src="bgm&sound/タップ音.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- スタート画面 -->
+  <section>
+    <h1>タイピングRPG</h1>
+    <img src="img/character_yusha_01_red.png">
+
+    <!-- ステータス -->
+    <div class="status">
+      <div>
+        <p id="lv">Lv:1</p>
+        <p id="ex">Ex:10</p>
+      </div>
+      <div>
+        <p id="hp">HP:1</p>
+        <p id="atk">ATK:1</p>
+      </div>
+    </div>
+
+    <!-- スタートボタン -->
+    <div class="choice">
+      <p>Enterでスタート</p>
+      <p>Escで最初から</p>
+    </div>
+    
+  </section>
+
+  <script src="js/start.js"></script>
+</body>
+
+</html>
