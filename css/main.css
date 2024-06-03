@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    padding-top: 100px;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+}
+
+#restart {
+    text-align: left;
+    font-size: 25px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#enemyImg {
+    width: 200px;
+    height: 200px;
+}
+
+.enemyStatus {
+    font-size: 30px;
+}
+
+.logArea {
+    width: 300px;
+    height: 300px;
+    /* top: 0px; */
+    /* right: 0px; */
+    /* background: greenyellow; */
+    /* border: 1px solid white; */
+    /* justify-content: right; */
+    /* margin-left: auto; */
+    font-size: 20px;
+}
+
+.logArea p {
+    margin: 0;
+}
+
+.damage {
+    background-color: red;
+    animation: blinkingAnimation 0.1s 3;
+}
+
+@keyframes blinkingAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.typingArea {
+    font-size: 40px;
+}
+
+#targetKa {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#targetJa {
+    font-size: 20px;
+    margin: 0;
+}
+
+#target {
+    margin: 20px 0;
+}
+
+.statusArea {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    gap: 50px;
+    font-size: 30px;
+}
